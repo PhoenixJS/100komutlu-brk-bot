@@ -1343,7 +1343,7 @@ client.on("message", message => {
 client.on("message", message => {
   if(message.author.bot) return;
   var spl = message.content.split(" ");
-  if(spl[0] == ".sa") {
+  if(spl[0] == ".say") {
   var link = spl[1]
  message.channel.send(`** <a:uptime2:845274154768793641> Şuanda \`${db.get("linkler").length}\` Kişi Botunu Uptime Ediyor.**`)
 }})
@@ -1596,9 +1596,20 @@ client.on('message', msg => {
 \`${prefix}nsfw(yakında)\` <a:okeys:842778593079197717> **Nsfw Komutlarını Gösterir.**
 
 \`${prefix}sunucukur\` <a:okeys:842778593079197717> **Sunucukur Komutlarını Gösterir.**
-    `)
+   
+\`\`\`•••••••••UPTİME SİSTEMİ•••••••••\`\`\`
+
+\`${prefix}ekle\` <a:okeys:842778593079197717> **Botunuzu Uptime Edersiniz.**
+
+\`${prefix}say\` <a:okeys:842778593079197717> **Bot Kaç Botu Uptime Ediyo Görürsünüz.**
+
+**BU ARADA BOTA BİR LİNK EKLERKEN BOTUN DM SİNDEN EKLEYİN YOKSA ALTYAPISI ÇALINABİLİR.**
+   `)
             .setColor("f6ff00")
     .setImage("https://cdn.discordapp.com/attachments/884803042673848330/884807822636888094/standard.gif")
+    
+    let embed3 = new Discord.MessageEmbed()
+    .setTitle('Uptime Sistemi')
     const embedPages = [embed1, embed2,  ];
         ButtonPages.createPages(client.interaction, msg, embedPages, 80 * 1000, "green", "👉", "👈", "🛑","💎")
   }
