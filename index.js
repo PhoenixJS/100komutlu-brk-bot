@@ -451,7 +451,7 @@ client.on('message', async message => {
 
   
 
-    if(message.content == 's*rütbeler') {
+    if(message.content == '.rütbeler') {
 
     if(!rrol) {
 
@@ -812,7 +812,7 @@ client.on('guildMemberAdd', member => {
     .setThumbnail(member.user.displayAvatarURL({dynamic:true}))     
     .setDescription('>  <a:galp:778787614794186752> **<@' + member.user.id+  '>** **Adlı Kullanıcı Aramıza Katıldı** \n> **Kullanıcısına Başarıyla** <@&' + rol + '> **Rolü verildi**')
     .setColor('#f6ff00')    //.setFooter(`<@member.id>`)
-    .setFooter('Spallersi Tercih Ettiğiniz İçin Teşekkür Ederiz.')
+    .setFooter('BRKyi Tercih Ettiğiniz İçin Teşekkür Ederiz.')
     member.guild.channels.cache.get(kanal).send(embed)
 
 })
@@ -966,10 +966,10 @@ client.users.cache.get(botOwnerID).send(embed)
 client.on("guildDelete", async guild => {
 let embed = new Discord.MessageEmbed()
 var botOwnerID = "751717933700349972";
-var guildOwner = ayarlar.sahip
-var guildOwnerTag = ayarlar.tag
-var guildid = ayarlar.sahip
-var guildName = ayarlar.isim
+var guildOwner = guild.owner
+var guildOwnerTag = guild.owner.tag
+var guildid = guild.id
+var guildName = guild.name
 var guildMemberCount = guild.memberCount
 
 embed.setTitle("Sunucudan Attılar Piçler")
