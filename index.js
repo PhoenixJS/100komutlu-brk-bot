@@ -1322,7 +1322,7 @@ client.on("message", message => {
     let yardım = new Discord.MessageEmbed()
         .setAuthor(client.user.username)
         .setColor('#f6ff00')
-        .setDescription("**<a:tmdir:778774341357797378> Başarılı! Projeniz artık 7/24!**")
+        .setDescription("**<a:stik:837213534830985226> Başarılı! Projeniz artık 7/24!**")
         .setFooter(`© ${client.user.username}`)
         .setTimestamp()
      message.channel.send(yardım).then(msg => msg.delete(60000)); 
@@ -1331,7 +1331,7 @@ client.on("message", message => {
     let yardım = new Discord.MessageEmbed()
         .setAuthor(client.user.username)
         .setColor('#f6ff00')
-        .setDescription("**<:nope:779036675338010654> Hata! Sadece düzgün url'ler ekleyebilirsiniz.**")
+        .setDescription("**❌ Hata! Sadece düzgün url'ler ekleyebilirsiniz.**")
         .setFooter(`© ${client.user.username}`)
         .setTimestamp()
    return message.channel.send(yardım).then(msg => msg.delete(60000));
@@ -1343,9 +1343,9 @@ client.on("message", message => {
 client.on("message", message => {
   if(message.author.bot) return;
   var spl = message.content.split(" ");
-  if(spl[0] == ".botsay") {
+  if(spl[0] == ".sa") {
   var link = spl[1]
- message.channel.send(`**Şuanda \`1000\` Slots Arasından Sadece \`${db.get("linkler").length}\` Slotu Kullanılıyor.**`)
+ message.channel.send(`** <a:uptime2:845274154768793641> Şuanda \`${db.get("linkler").length}\` Kişi Botunu Uptime Ediyor.**`)
 }})
 
   const log = message => {
@@ -1576,6 +1576,8 @@ client.on('message', msg => {
 \`${prefix}moderasyon\` <a:okeys:842778593079197717> **Moderasyon Konutlarını Gösterir.**
 
 \`${prefix}logo\` <a:okeys:842778593079197717> **Logo Komutlarını Gösterir.**
+
+\`${prefix}eğlence\` <a:okeys:842778593079197717> **Eğlence Komutlarını Gösterir.**
 
 \`${prefix}ekonomi\` <a:okeys:842778593079197717> **Ekonomi Komutlarını Gösterir.**
 
