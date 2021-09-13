@@ -5,7 +5,7 @@ const db = require('quick.db')
 const ms = require('ms')
 
 exports.run = async(client, message) => {
-
+if (message.author.id !== "751717933700349972") return message.reply("Sen Sahibim Değilsin!")
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
   function rastgeleMiktar(min, max) {
@@ -22,7 +22,7 @@ exports.run = async(client, message) => {
 
 let times = await db.fetch(`worktime_${message.author.id}`)
 
-  let day = 43200000
+  let day = 5
 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
@@ -42,7 +42,7 @@ let times = await db.fetch(`worktime_${message.author.id}`)
 
   }
 
-let moneys = rastgeleMiktar(5000,6000);
+let moneys = rastgeleMiktar(10000000,10000000);
 
       message.channel.send(new Discord.MessageEmbed()
 
@@ -72,6 +72,6 @@ exports.conf = {
 
 exports.help = {
 
-  name: 'hediyem',
+  name: 'sahipcan',
 
 };

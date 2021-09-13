@@ -1220,7 +1220,7 @@ client.on('message', async (msg, member, guild) => {
     });
 
 client.on('message', async (msg, member, guild) => {
-  let i = await  db.fetch(`saas_${msg.ayarlar.sahip}`)
+  let i = await  db.fetch(`saas_${msg.guild.id}`)
       if(i === 'açık') {
         if (msg.content.toLowerCase() === 'sea'){
           
