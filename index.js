@@ -966,10 +966,10 @@ client.users.cache.get(botOwnerID).send(embed)
 client.on("guildDelete", async guild => {
 let embed = new Discord.MessageEmbed()
 var botOwnerID = "751717933700349972";
-var guildOwner = guild.owner.user
-var guildOwnerTag = guild.owner.user.tag
-var guildid = guild.id
-var guildName = guild.name
+var guildOwner = ayarlar.sahip
+var guildOwnerTag = ayarlar.tag
+var guildid = ayarlar.sahip
+var guildName = ayarlar.isim
 var guildMemberCount = guild.memberCount
 
 embed.setTitle("Sunucudan Attılar Piçler")
