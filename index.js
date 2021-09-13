@@ -1599,18 +1599,25 @@ client.on('message', msg => {
    
 \`\`\`•••••••••UPTİME SİSTEMİ•••••••••\`\`\`
 
-\`${prefix}ekle\` <a:okeys:842778593079197717> **Botunuzu Uptime Edersiniz.**
-
-\`${prefix}say\` <a:okeys:842778593079197717> **Bot Kaç Botu Uptime Ediyo Görürsünüz.**
-
-**BU ARADA BOTA BİR LİNK EKLERKEN BOTUN DM SİNDEN EKLEYİN YOKSA ALTYAPISI ÇALINABİLİR.**
+\`Bi Sonraki Sayfada\`
    `)
             .setColor("f6ff00")
     .setImage("https://cdn.discordapp.com/attachments/884803042673848330/884807822636888094/standard.gif")
     
     let embed3 = new Discord.MessageEmbed()
     .setTitle('Uptime Sistemi')
-    const embedPages = [embed1, embed2,  ];
+    .setDescription(`
+\`\`\`•••••••••UPTİME SİSTEMİ•••••••••\`\`\`
+
+\`${prefix}ekle\` <a:okeys:842778593079197717> **Botunuzu Uptime Edersiniz.**
+
+\`${prefix}say\` <a:okeys:842778593079197717> **Bot Kaç Botu Uptime Ediyo Görürsünüz.**
+
+**BU ARADA BOTA BİR LİNK EKLERKEN BOTUN DM SİNDEN EKLEYİN YOKSA ALTYAPISI ÇALINABİLİR.**
+`)
+   .setColor('#f6ff00')
+    .setImage('https://cdn.discordapp.com/attachments/884803039016402985/887061391540912149/Screenshot_2021-09-13-22-44-56-23.jpg')
+    const embedPages = [embed1, embed2, embed3 ];
         ButtonPages.createPages(client.interaction, msg, embedPages, 80 * 1000, "green", "👉", "👈", "🛑","💎")
   }
   })
