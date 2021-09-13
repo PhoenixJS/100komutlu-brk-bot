@@ -1316,7 +1316,7 @@ client.on("ready", () => {
 client.on("message", message => {
   if(message.author.bot) return;
   var spl = message.content.split(" ");
-  if(spl[0] == "s*ekle") {
+  if(spl[0] == ".ekle") {
   var link = spl[1]
   fetch(link).then(() => {
     let yardım = new Discord.MessageEmbed()
@@ -1343,7 +1343,7 @@ client.on("message", message => {
 client.on("message", message => {
   if(message.author.bot) return;
   var spl = message.content.split(" ");
-  if(spl[0] == "s*botsay") {
+  if(spl[0] == ".botsay") {
   var link = spl[1]
  message.channel.send(`**Şuanda \`1000\` Slots Arasından Sadece \`${db.get("linkler").length}\` Slotu Kullanılıyor.**`)
 }})
@@ -1361,7 +1361,7 @@ client.on("message", message => {
 client.on('message', async message => {
 if(message.channel.type !== 'text') return;
 if(message.author.bot) return;
-if(message.content.startsWith('s*afk')) return;
+if(message.content.startsWith('.afk')) return;
 if(message.mentions.members.first()) {
 let mention = message.mentions.members.first();
 const est = await db.fetch(`kullanıcı.${mention.id}.${message.guild.id}`);
