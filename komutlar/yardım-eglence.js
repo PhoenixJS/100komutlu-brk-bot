@@ -3,8 +3,8 @@ const ayarlar = require("../ayarlar.json")
 exports.run = async (client, message, args) => {
 let prefix = ayarlar.prefix
 const yardım = new Discord.MessageEmbed()
-.setColor("BLUE")
-.setAuthor(`Eğlence Botu V12`)
+.setColor("f6ff00")
+.setAuthor(`Eğlence`)
 .setTitle(" Eğlence Bot yardım menüsüne hoşgeldin! ")
  .setTimestamp()
 .addField(`**${prefix}atatürk**`,"Bunu neden kendin denemiyorsun? :infinity:")
