@@ -77,7 +77,7 @@ if(message.author.id != "627803211348312065") return message.channel.send(bakim)
     .addField("» **Bit**", `\`${os.arch()}\``, true)
     
     .addField("» **İşletim Sistemi**", `\`\`\`windows\`\`\``)
-    .addField("**➥ Linkler**", "**[Davet Linki](https://discord.com/oauth2/authorize?client_id=869251332010299392&scope=bot&permissions=8)**\n **[Destek Sunucu](https://discord.gg/kqaBAxkkuX)**\n**[Website= YAKINDA]()**");
+    .addField("**➥ Linkler**", "**[Davet Linki](https://discord.com/oauth2/authorize?client_id=877628391031988266&scope=bot&permissions=82779938739883793937739)**\n **[Destek Sunucu](https://discord.gg/tahsineren)**\n**[Website= YAKINDA]()**");
   return message.channel.send(msg);
 };
 
