@@ -89,5 +89,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: "istatistik",
+  name: "istatisti",
 };
